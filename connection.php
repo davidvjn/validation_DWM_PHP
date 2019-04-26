@@ -20,30 +20,13 @@
 
   <main>
   <img class="terrain_connect" src="../terrain2.jpeg">
-  <form action="./controllers/connect.php" method="POST">
+  <form action="./controllers/verify.php" method="POST">
       <label for="pseudo">Ton pseudo</label>
       <input type="text" name="pseudo" placeholder="pseudo" required>
       <label for="password">Ton mot de passe</label>
       <input type="password" name="password" placeholder="Ton mot de passe" required>
       <br>
-      <?php $users =
-        [
-            [
-                'pseudo' => 'Johnny',
-                'password' => 'Begood',
-            ],
-            [
-                'pseudo' => 'Dick',
-                'password' => 'Rivière',
-            ]
-        ]
-        ?>
-        <?php 
-            if (($_POST == $users) && ($_POST == $users))
-                echo "Welcome" .$pseudo;
-            else
-                echo "Création de compte à faire";
-        ?>
+      
       <h2 class="apar">-->Quel est votre poste?</h2>
       <br>
       <input type="checkbox" name="poste" value="gardien de but" onClick="ChangeStatut(this.form)" />
