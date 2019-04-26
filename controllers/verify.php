@@ -1,4 +1,8 @@
-<?php $users =
+<?php
+
+session_start();
+
+$users =
         [
             [
                 'pseudo' => 'Johnny',
@@ -8,12 +12,17 @@
                 'pseudo' => 'Dick',
                 'password' => 'Rivière',
             ]
-        ]
-        ?>
-        <?php
-            foreach ($users as $user);
-            if (($_POST['pseudo'] == $users) && ($_POST['password'] == $users)
-                echo ($users['pseudo']);
-            else
-                echo "Création de compte à faire";
-        ?>
+        ];
+
+    foreach ($users as $user) {
+        if ($_POST['pseudo'] == $user['pseudo'] && $_POST['password'] == $user['password']) {
+            echo "Welcome " .($user['pseudo']);
+            header('Location: /');
+            break;
+
+        } else {
+            echo ("Création de compte à faire");
+            break;
+        }
+    }
+

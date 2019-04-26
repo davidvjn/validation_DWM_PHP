@@ -13,8 +13,8 @@
    <header>  
     <?php require_once './templates/nav_bar.php' ?>
     
-    <?php if (isset($_SESSION['pseudo'])): ?>
-      <h4>Bon retour parmi nous <?= $_SESSION['pseudo'] ?></h4>
+    <?php if (isset($_POST['pseudo'])): ?>
+      <h4>Bon retour parmi nous <?= $_POST['pseudo'] ?></h4>
     <?php else: ?>
       <h4>Connecte-toi!</h4>
     <?php endif ?>
