@@ -1,0 +1,71 @@
+body {
+    background-color: rgb(4, 109, 4);
+}
+
+img{
+        display:block;
+        width: 55%;
+        margin-left:auto;
+        margin-right:auto;
+}
+
+button {
+    font-size: 0.5cm;
+    background-color: yellowgreen;
+    border-radius: 15px;
+}
+
+footer {
+    font-style: italic;
+    font-size: 0.5cm;
+    position: absolute; bottom: 0; left: 0, right: 0; 
+    width: 100%;
+}
+
+h1 {
+    text-align: center;
+    background-color: blue;
+    -webkit-animation: titre 10s;
+}
+
+h2 {
+    text-align: center;
+}
+
+@-webkit-keyframes titre {
+    0% {
+        transform: translate(-800px);
+    }
+
+    50% {
+        transform: translate(1900px);
+    }
+}
+
+.terrain_connect {
+    display:block;
+        width: 20%;
+        margin-left:auto;
+        margin-right:auto;
+}
+
+.bouton_connect {
+    font-size: 0.5cm;
+    background-color: orange;
+    border-radius: 15px;
+}
+
+label {
+    font-size: 0.5cm;
+    font-weight: bold;
+    background-color: black;
+    color: red;
+}
+
+h4 {
+    font-size: 0.4cm;
+}
+
+.apar {
+    text-align: justify;
+}
